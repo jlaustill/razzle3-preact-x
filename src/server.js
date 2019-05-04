@@ -1,6 +1,6 @@
 import App from './App';
 import React from 'react';
-import { StaticRouter } from 'react-router-dom';
+// import { StaticRouter } from 'react-router-dom';
 import express from 'express';
 import { renderToString } from 'react-dom/server';
 
@@ -12,10 +12,14 @@ server
   .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
   .get('/*', (req, res) => {
     const context = {};
+    // const markup = renderToString(
+    //   <StaticRouter context={context} location={req.url}>
+    //     <App />
+    //   </StaticRouter>
+    // );
+
     const markup = renderToString(
-      <StaticRouter context={context} location={req.url}>
         <App />
-      </StaticRouter>
     );
 
     if (context.url) {
