@@ -1,8 +1,8 @@
 import App from './App';
-import React from 'react';
+import render from 'preact-render-to-string';
+import { h } from 'preact';
 // import { StaticRouter } from 'react-router-dom';
 import express from 'express';
-import { renderToString } from 'react-dom/server';
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
@@ -18,7 +18,7 @@ server
     //   </StaticRouter>
     // );
 
-    const markup = renderToString(
+    const markup = render(
         <App />
     );
 

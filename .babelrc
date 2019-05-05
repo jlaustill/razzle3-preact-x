@@ -11,6 +11,7 @@
         "create-react-class": "preact/compat/lib/create-react-class",
         "react-dom-factories": "preact/compat/lib/react-dom-factories"
       }
-    }]
+    }],
+    ["@babel/plugin-transform-react-jsx", { "pragma":"h" }]
   ]
 }
