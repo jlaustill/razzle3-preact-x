@@ -10,6 +10,6 @@ import './App.css';
 //   </Switch>
 // );
 
-const App = () => (<div>testing...</div>);
+const App = () => (<Home />);
 
 export default App;

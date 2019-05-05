@@ -10,3 +10,4 @@ yarn remove react react-dom
 
 yarn add -D babel-plugin-module-resolver
 
+yarn add preact-render-to-string
